@@ -1,0 +1,41 @@
+{
+  "name": "genpark-rectified-flow-transformer-diffusion-sampler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Rectified flow diffusion transformer sampler executing straight-line vector field trajectories for ultra-fast photorealistic generation.",
+  "author": "genpark",
+  "category": "diffusion-transformer",
+  "tags": [
+    "flux1",
+    "dit",
+    "rectified-flow",
+    "diffusion-sampler",
+    "photorealistic-image"
+  ],
+  "inputs": {
+    "prompt": {
+      "type": "string"
+    },
+    "inference_steps_count": {
+      "type": "integer"
+    },
+    "guidance_scale": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "sampling_job_id": {
+      "type": "string"
+    },
+    "flow_trajectory_linearity_score": {
+      "type": "number"
+    },
+    "text_alignment_clip_score_pct": {
+      "type": "number"
+    },
+    "rendered_image_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
